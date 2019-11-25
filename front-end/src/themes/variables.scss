@@ -1,0 +1,60 @@
+/**
+* Variables
+**/
+
+/* Fonts Family*/
+$font-body: 'open_sansregular';
+$font-opensanslight: 'open_sanslight';
+$font-opensansregular: 'open_sansregular';
+$font-opensanssemibold: 'open_sanssemibold';
+$font-opensansbold: 'open_sansbold';
+
+/* Fonts Size */
+$font-content-size: 14px;
+
+/* Fonts Weights*/
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*Background Colors */
+$body-bg: #fff;
+$header-bg: #2b3643;
+$footer-bg: #2b3643;
+$darkgreen-bg: #2b3643;
+$bg-white: #fff;
+$bg-grey: #f1f1f1;
+$bg-blue: #009fe3;
+$bg-content: #f3f3f3;
+
+/* Text Colors */
+$txt-body: #333;
+$txt-menu: #666;
+$txt-white: #fff;
+$txt-skyblue: #009fe3;
+$txt-navyblue: #015494;
+$txt-blue: #536881;
+$txt-subcaption: #999;
+$txt-grey: #4c4c4c;
+$txt-title: #3d5170;
+$txt-table: #616972;
+
+/* Button Colors */
+$btn-default: #fb8933;
+$btn-aqua-blue: #32c5d2;
+$btn-danger: #ed6b75;
+$btn-yellow: #c49f47;
+$btn-grey: #f6f5f5;
+
+/* Border-color */
+$header-footer-border: #e4e9f0;
+$default-border: #999;
+$input-focus: #93a1bb;
+$table-border: #e8e8e8;
+
+/* Media Query Breakpoint */
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
