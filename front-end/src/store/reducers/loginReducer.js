@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 export default function loginReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case actionTypes.LOGIN_ACTIONS.USER_LOGIN_REQUEST:
-      debugger;
+      console.log("am in the reducer")
       return {
         ...state,
         ...action.credentials
