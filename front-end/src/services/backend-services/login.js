@@ -1,10 +1,7 @@
-import axios from "axios";
+import baseAPI from './baseAPI';
+import { LOGIN_URL } from '../../constants/urls'
 
-export default function userLogin() {
-  console.log("Hello world");
-  debugger;
-  axios.post("/login", {
-    firstName: "Fred",
-    lastName: "Flintstone"
-  });
+export default function userLogin(credentials) {
+  debugger
+  return baseAPI().post( LOGIN_URL, credentials );
 }

@@ -1,10 +1,20 @@
-import { takeEvery, all } from "redux-saga/effects";
+import { takeEvery, all, call } from "redux-saga/effects";
 import * as actionTypes from "../actionTypes";
-import userLogin from "../../services/backend-services/login";
+import apiCalls from "../../services/backend-services";
+import utils from "../utils"
 
 function* watchUserLogin() {
-  console.log("here in the user login");
-  yield takeEvery(actionTypes.LOGIN_ACTIONS.USER_LOGIN_REQUEST, userLogin);
+  yield takeEvery(actionTypes.LOGIN_ACTIONS.USER_LOGIN_REQUEST, userLoginWithDetails);
+}
+
+function* userLoginWithDetails(action){
+  try{
+    debugger
+    let response = yield call( apiCalls.userLogin, action.credentials );
+    utils.storeUserToken( response.data.token )
+  }catch(err){
+    console.log("The error is---", err);
+  }
 }
 
 export default function* login() {
